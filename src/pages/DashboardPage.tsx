@@ -34,7 +34,7 @@ export default function DashboardPage() {
         <p className="text-2xl font-light text-gray-500 mt-5">
           Maneja y administra tus proyectos
         </p>
-        {data.length && (
+        {data.length > 0 && (
           <Link
             className="inline-block bg-purple-400 hover:bg-purple-500 mt-5 px-10 py-3 rounded text-white text-xl font-bold cursor-pointer transition-colors"
             to={"/projects/create"}
